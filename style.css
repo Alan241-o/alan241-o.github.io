@@ -22,7 +22,7 @@ header {
 header .logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: #00ffff; /* cyan */
+  color: #00ffff;
 }
 
 header nav ul {
@@ -43,30 +43,27 @@ header nav ul li a:hover {
 }
 
 /* Hero */
-.hero, .about-container {
+.hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 100px 50px 50px 50px;
+  height: 80vh;
+  text-align: center;
 }
 
-.hero-text h1, .about-text h1 {
-  color: #00ffff;
+.hero-text h1 {
   font-size: 3em;
   margin-bottom: 15px;
+  color: #00ffff;
 }
 
-.hero-text p, .about-text p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.hero-buttons .btn, .hero-buttons .btn-outline, .btn, .btn-outline {
+.hero-buttons a {
   padding: 12px 25px;
+  margin: 5px;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .btn {
@@ -74,46 +71,74 @@ header nav ul li a:hover {
   color: #0a0a0a;
 }
 
+.btn:hover {
+  transform: scale(1.1);
+  background: #00cccc;
+}
+
 .btn-outline {
   border: 2px solid #00ffff;
   color: #00ffff;
 }
 
-.btn:hover, .btn-outline:hover {
+.btn-outline:hover {
   transform: scale(1.1);
+  background: #002222;
 }
 
-/* Hero image */
-.hero-image img, .about-image img {
-  width: 300px;
-  border-radius: 10px;
-}
-
-/* Project cards */
-.project-cards {
+/* Blocs */
+.info-blocks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 50px;
+  padding: 50px;
 }
 
-.card {
+.block {
   background: #111;
   width: 250px;
+  padding: 20px;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 0 20px #00ffff33;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card img {
-  width: 100%;
+.block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00ffff66;
 }
 
-.card h3 {
+.block h3 {
   color: #00ffff;
-  padding: 15px;
+  margin-bottom: 10px;
+}
+
+/* Cartes projets */
+.projects-preview {
+  text-align: center;
+  padding: 50px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111;
+  width: 220px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffff33;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -121,55 +146,7 @@ header nav ul li a:hover {
   box-shadow: 0 0 30px #00ffff66;
 }
 
-/* About skills bars */
-.skills {
-  margin: 20px 0;
-}
-
-.skill {
-  margin-bottom: 10px;
-}
-
-.skill span {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.skill .bar {
-  background: #222;
-  border-radius: 5px;
-  height: 10px;
-  overflow: hidden;
-}
-
-.skill .bar div {
-  height: 100%;
-  background: #00ffff;
-  border-radius: 5px;
-}
-
-/* Contact form */
-.contact-page form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto 20px auto;
-}
-
-.contact-page input, .contact-page textarea {
-  padding: 12px;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-}
-
-.contact-page textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.contact-page button {
-  width: 150px;
-  align-self: center;
+.card h3 {
+  color: #00ffff;
+  margin: 0 5px;
 }
