@@ -2,103 +2,54 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio – Hénoc Alan OGANDAGA</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hénoc Alan OGANDAGA - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header class="hero">
-  <nav>
-    <h2 class="logo">HÉNOC OGANDAGA</h2>
-    <ul>
-      <li><a href="#profil">Profil</a></li>
-      <li><a href="#competences">Compétences</a></li>
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#formation">Formation</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hénoc Alan OGANDAGA</h1>
+      <p>Étudiant BTS SIO — SISR</p>
+      <div class="hero-buttons">
+        <a href="about.html" class="btn">À propos</a>
+        <a href="projects.html" class="btn-outline">Mes projets</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.png" alt="Profil Hénoc Alan OGANDAGA">
+    </div>
+  </section>
 
-  <div class="hero-content">
-    <h1>Étudiant en BTS SIO – Option <span>SISR</span></h1>
-    <p>Réseaux • Systèmes • Cybersécurité</p>
-  </div>
-</header>
-
-<section id="profil">
-  <h2>Profil professionnel</h2>
-  <p>
-    Étudiant en BTS SIO option SISR, spécialisé dans les infrastructures réseau,
-    l’administration système et la cybersécurité.  
-    Je développe des compétences solides en analyse réseau, gestion des services
-    informatiques et sécurisation d’environnements Windows et Linux.  
-    Mon objectif est de concevoir, maintenir et sécuriser des systèmes fiables et performants.
-  </p>
-</section>
-
-<section id="competences">
-  <h2>Compétences techniques</h2>
-
-  <h3>Réseaux</h3>
-  <ul>
-    <li>Analyse de trafic (Wireshark)</li>
-    <li>Configuration Cisco (switches, routeurs)</li>
-    <li>ACL : droits, permissions, filtrage</li>
-    <li>Conception d’architectures réseau simples</li>
-  </ul>
-
-  <h3>Systèmes</h3>
-  <ul>
-    <li>Active Directory : utilisateurs, groupes</li>
-    <li>Serveur de déploiement (WDS / VM)</li>
-    <li>Administration Windows Server</li>
-    <li>Linux : Debian, Kali</li>
-  </ul>
-
-  <h3>Cybersécurité</h3>
-  <ul>
-    <li>Notions fondamentales de cybersécurité</li>
-    <li>Analyse réseau</li>
-    <li>Outils Kali Linux</li>
-    <li>Sécurisation d’infrastructures simples</li>
-  </ul>
-
-  <h3>Outils et environnements</h3>
-  <p>
-    Cisco Packet Tracer • Wireshark • VirtualBox • VMware • Windows Server • Debian • Kali Linux • Pack Office
-  </p>
-</section>
-
-<section id="projets">
-  <h2>Projets et réalisations</h2>
-
-  <div class="card">
-    <h3>Infrastructure réseau sécurisée — “Ma Banque”</h3>
-    <p>Conception d’une architecture réseau, sécurisation des accès et permissions, analyse des risques.</p>
-  </div>
-
-  <div class="card">
-    <h3>Analyse réseau (Wireshark)</h3>
-    <p>Capture et analyse de paquets, étude des protocoles, détection d’anomalies.</p>
-  </div>
-
-  <div class="card">
-    <h3>Administration système</h3>
-    <p>Gestion des utilisateurs et groupes, ACL et permissions, déploiement de services.</p>
-  </div>
-</section>
-
-<section id="formation">
-  <h2>Formation</h2>
-  <p><strong>BTS SIO — Option SISR</strong> (2024–2026)</p>
-  <p>Baccalauréat Scientifique — Mention Assez Bien (2023–2024)</p>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email : <a href="mailto:henocogandaga@yahoo.com">henocogandaga@yahoo.com</a></p>
-  <p>LinkedIn : <a href="https://linkedin.com/in/henoc-alan-ogandaga" target="_blank">linkedin.com/in/henoc-alan-ogandaga</a></p>
-</section>
-
+  <section class="projects">
+    <h2>Mes projets</h2>
+    <div class="project-cards">
+      <div class="card">
+        <img src="images/projet1.png" alt="Projet 1">
+        <h3>Exolab - Simulation réseau</h3>
+      </div>
+      <div class="card">
+        <img src="images/projet2.png" alt="Projet 2">
+        <h3>Portfolio Web</h3>
+      </div>
+      <div class="card">
+        <img src="images/projet3.png" alt="Projet 3">
+        <h3>Autre projet</h3>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
