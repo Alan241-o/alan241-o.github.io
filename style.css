@@ -1,3 +1,5 @@
+/* === style.css === */
+
 /* Général */
 body {
   margin: 0;
@@ -5,6 +7,8 @@ body {
   background: #0a0a0a;
   color: #fff;
 }
+
+a { text-decoration: none; }
 
 /* Header */
 header {
@@ -15,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 15px 50px;
   z-index: 1000;
 }
 
@@ -28,12 +32,11 @@ header .logo {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 header nav ul li a {
   color: #fff;
-  text-decoration: none;
   font-weight: 500;
 }
 
@@ -51,19 +54,19 @@ header nav ul li a:hover {
   text-align: center;
 }
 
-.hero-text h1 {
+.hero h1 {
   font-size: 3em;
-  margin-bottom: 15px;
   color: #00ffff;
+  margin-bottom: 20px;
 }
 
 .hero-buttons a {
+  display: inline-block;
   padding: 12px 25px;
   margin: 5px;
   border-radius: 5px;
   font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.2s;
 }
 
 .btn {
@@ -71,28 +74,22 @@ header nav ul li a:hover {
   color: #0a0a0a;
 }
 
-.btn:hover {
-  transform: scale(1.1);
-  background: #00cccc;
-}
-
 .btn-outline {
   border: 2px solid #00ffff;
   color: #00ffff;
 }
 
-.btn-outline:hover {
+.btn:hover, .btn-outline:hover {
   transform: scale(1.1);
-  background: #002222;
 }
 
-/* Blocs */
+/* Info blocks */
 .info-blocks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 50px;
+  gap: 20px;
+  padding: 50px 20px 100px 20px;
 }
 
 .block {
@@ -104,49 +101,20 @@ header nav ul li a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.block:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 30px #00ffff66;
-}
-
 .block h3 {
   color: #00ffff;
   margin-bottom: 10px;
 }
 
-/* Cartes projets */
-.projects-preview {
-  text-align: center;
-  padding: 50px;
-}
-
-.project-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.card {
-  background: #111;
-  width: 220px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00ffff33;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
+.block:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 30px #00ffff66;
 }
 
-.card h3 {
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
   color: #00ffff;
-  margin: 0 5px;
 }
