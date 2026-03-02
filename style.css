@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #020617, #020617cc);
+  padding: 30px 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+.hero-content {
+  margin-top: 150px;
+}
+
+.hero-content span {
+  color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 80px;
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+/* CARTES PROJETS */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* LIENS */
+a {
+  color: #38bdf8;
+}
