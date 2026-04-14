@@ -1,55 +1,34 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0d0d0d;
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0b;
   color: white;
 }
 
-/* NAVBAR */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
-  padding: 15px 40px;
-}
-
-nav {
+/* NAV */
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 20px 40px;
 }
 
-.logo {
-  color: #00ffff;
-  font-weight: bold;
-}
-
-nav ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-nav a {
-  color: white;
+.nav a {
+  margin-left: 20px;
+  color: #aaa;
   text-decoration: none;
-  transition: 0.3s;
 }
 
-nav a:hover, .active {
+.nav a:hover {
   color: #00ffff;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 15px;
+  padding-left: 80px;
 }
 
 .hero h1 {
@@ -57,55 +36,46 @@ nav a:hover, .active {
   color: #00ffff;
 }
 
-.hero-buttons {
-  margin-top: 20px;
+.hero p {
+  color: #aaa;
 }
 
 /* BUTTONS */
-.btn-main {
+.buttons {
+  margin-top: 20px;
+}
+
+.primary {
   background: #00ffff;
   color: black;
   padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: 8px;
   margin-right: 10px;
 }
 
-.btn-second {
-  border: 2px solid #00ffff;
+.secondary {
+  border: 1px solid #00ffff;
   padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: 8px;
   color: #00ffff;
 }
 
-.btn-main:hover, .btn-second:hover {
-  transform: scale(1.05);
-}
-
-/* CARDS */
-.cards {
+/* GRID */
+.grid {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 20px;
   padding: 50px;
-  flex-wrap: wrap;
 }
 
 .card {
   background: #111;
-  padding: 25px;
-  width: 220px;
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px #00ffff55;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #00ffff;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00ffff55;
 }
