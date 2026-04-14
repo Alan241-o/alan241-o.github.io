@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Synthèse</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synthèse - Hénoc Alan OGANDAGA</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-<nav>
-<div class="logo">H.A</div>
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li><a href="projects.html">Projets</a></li>
-<li><a href="veille.html">Veille</a></li>
-<li><a href="synthese.html" class="active">Synthèse</a></li>
-</ul>
-</nav>
+  <nav>
+    <div class="logo">H.A</div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="synthese.html" class="active">Synthèse</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="hero">
-<h1>Tableau de synthèse</h1>
+<section class="page-hero">
+  <h1>Tableau de <span>synthèse</span></h1>
+  <p>
+    Cette page présente mon tableau de synthèse BTS SIO, mettant en avant
+    les compétences développées à travers mes projets, mes activités et
+    les situations professionnelles réalisées pendant ma formation.
+  </p>
 </section>
 
-<section style="padding:40px">
+<section class="info-blocks">
+  <div class="block">
+    <h3>📘 Contenu</h3>
+    <p>
+      Tableau récapitulatif des compétences mobilisées dans le cadre du BTS SIO SISR.
+    </p>
+  </div>
 
-<iframe 
-src="https://docs.google.com/spreadsheets/d/1VLZqQ57CY3e531BcMDynjGAliVUz3rfY/edit?usp=drive_link&ouid=111036557626625823063&rtpof=true&sd=true"
-width="100%" 
-height="600px" 
-style="border:none; border-radius:10px;">
-</iframe>
+  <div class="block">
+    <h3>🎯 Objectif</h3>
+    <p>
+      Montrer les activités réalisées, les outils utilisés et les compétences validées.
+    </p>
+  </div>
 
+  <div class="block">
+    <h3>🛠 Compétences</h3>
+    <p>
+      Réseaux, systèmes, administration, support, sécurisation et gestion d’infrastructure.
+    </p>
+  </div>
+
+  <div class="block">
+    <h3>📎 Support</h3>
+    <p>
+      Document Google Sheets intégré directement dans la page pour consultation.
+    </p>
+  </div>
 </section>
+
+<section class="presentation-section">
+  <div class="presentation-card">
+    <h2>Tableau de synthèse</h2>
+
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/1VLZqQ57CY3e531BcMDynjGAliVUz3rfY/preview"
+      allowfullscreen>
+    </iframe>
+
+    <div class="presentation-actions">
+      <a href="https://docs.google.com/spreadsheets/d/1VLZqQ57CY3e531BcMDynjGAliVUz3rfY/preview" target="_blank" class="btn">
+        Ouvrir le tableau
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/1VLZqQ57CY3e531BcMDynjGAliVUz3rfY/export?format=pdf" target="_blank" class="btn-outline">
+        Télécharger en PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Hénoc Alan OGANDAGA - Portfolio BTS SIO SISR
+</footer>
 
 </body>
 </html>
