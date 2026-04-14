@@ -1,9 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, #0b0b0b 0%, #111827 100%);
@@ -34,7 +36,6 @@ nav {
   font-size: 1.4rem;
   font-weight: 700;
   color: #00ffff;
-  letter-spacing: 1px;
 }
 
 nav ul {
@@ -66,7 +67,6 @@ nav ul li a:hover::after {
   width: 100%;
   height: 2px;
   background: #00ffff;
-  border-radius: 2px;
 }
 
 /* HERO */
@@ -81,10 +81,8 @@ nav ul li a:hover::after {
 }
 
 .hero h1 {
-  font-size: 3.8rem;
-  line-height: 1.1;
+  font-size: 3.5rem;
   margin-bottom: 15px;
-  color: #ffffff;
 }
 
 .hero h1 span {
@@ -98,13 +96,13 @@ nav ul li a:hover::after {
   margin-bottom: 30px;
 }
 
+/* BUTTONS */
 .hero-buttons {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
 .btn,
 .btn-outline {
   display: inline-block;
@@ -122,22 +120,21 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
   background: #7affff;
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   border: 1px solid #00ffff;
   color: #00ffff;
-  background: transparent;
 }
 
 .btn-outline:hover {
-  background: rgba(0, 255, 255, 0.08);
+  background: rgba(0, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 
-/* INFO BLOCKS */
+/* GRID / BLOCS */
 .info-blocks {
   max-width: 1200px;
   margin: 0 auto;
@@ -153,34 +150,74 @@ nav ul li a:hover::after {
   border-radius: 18px;
   padding: 25px;
   transition: 0.3s ease;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .block:hover {
   transform: translateY(-6px);
   border-color: rgba(0, 255, 255, 0.35);
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.12);
 }
 
 .block h3 {
-  font-size: 1.2rem;
   margin-bottom: 12px;
-  color: #ffffff;
 }
 
 .block p {
   color: #c8c8c8;
+  margin-bottom: 15px;
+}
+
+/* CONTACT */
+.contact-link {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* VEILLE / PRESENTATION */
+.presentation-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px 80px;
+}
+
+.presentation-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(0, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.presentation-card h2 {
   margin-bottom: 20px;
-  min-height: 50px;
+}
+
+.presentation-card iframe {
+  width: 100%;
+  min-height: 600px;
+  border-radius: 14px;
+  border: none;
+}
+
+.presentation-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 25px 20px;
+  padding: 25px;
   color: #a8a8a8;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(0, 0, 0, 0.25);
 }
 
 /* RESPONSIVE */
@@ -190,7 +227,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -202,21 +239,12 @@ footer {
 
   nav ul {
     justify-content: center;
-    gap: 16px;
   }
 
   .hero {
-    padding: 80px 20px 60px;
+    padding: 80px 20px;
     text-align: center;
     align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
   }
 
   .hero-buttons {
@@ -225,10 +253,9 @@ footer {
 
   .info-blocks {
     grid-template-columns: 1fr;
-    padding: 20px 20px 60px;
   }
 
-  .block p {
-    min-height: auto;
+  .presentation-card iframe {
+    min-height: 400px;
   }
 }
